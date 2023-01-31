@@ -1,22 +1,16 @@
 import logo from "./logo.svg";
 import "./App.scss";
+import Component from "./examples/myComponent";
 
-const greeting = (
-  <div>
-    <h1>hello</h1>
-    <h1>my name is CQueue7</h1>
-  </div>
-);
-
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {greeting}
+        <Component />
       </header>
     </div>
   );
-}
+};
 
 export default App;
